@@ -1,241 +1,126 @@
-# Awesome-Cloud-Development-Environments
-
-## Top Cloud Development Environments Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Ephemeral Workspaces, Dev Container Standards & Self-Hosted IDE Infrastructure*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Development Environments (CDEs)**. These tools enable developers to spin up fully configured development environments in seconds—from any machine, any operating system, without the "works on my machine" problem.
-
-
-
-**Examples** include GitHub Codespaces, Gitpod, AWS Cloud9, Google Cloud Workstations, Replit Teams, Coder, DevZero, Daytona, Codeanywhere, and StackBlitz (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, Dev Container standards, and open IDE infrastructure—ideal for platform engineers, DevOps teams, and organizations seeking transparent, vendor-independent development environments.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[GitHub Codespaces](https://github.com/features/codespaces)**  
-
-  **Cloud-hosted dev environments defined as code via Dev Containers** . **Instantly launches from any GitHub repo** with terminal, extensions, and port forwarding . **Deep GitHub integration**—prebuilds, secrets, and VS Code in the browser . **The most integrated with GitHub ecosystem** .
-
-
-
-- **[AWS Cloud9](https://aws.amazon.com/cloud9/)**  
-
-  **Cloud-based IDE with deep AWS integration** . Features **built-in terminal**, **debugger**, and **AWS service integration** . **Best for AWS-centric development workflows** .
-
-
-
-- **[Google Cloud Workstations](https://cloud.google.com/workstations)**  
-
-  **Managed development environments on Google Cloud** . Features **container-based workspaces**, **VPC-SC integration**, and **enterprise security controls** . **Best for GCP-committed organizations** .
-
-
-
-- **[Replit Teams](https://replit.com/)**  
-
-  **Browser-based IDE with instant execution, hosting, and AI assistance** . **The most accessible zero-setup option** —starts coding in seconds without any local configuration .
-
-
-
-- **[Coder Cloud](https://coder.com/)**  
-
-  **Managed version of the open-source Coder platform** . Features **Terraform-defined workspaces**, **enterprise SSO**, and **multi-cloud support** .
-
-
-
-- **[DevZero](https://www.devzero.io/)**  
-
-  **Cloud development environments with instant environment cloning** . Features **environment snapshots**, **dependency caching**, and **microservice support** .
-
-
-
-- **[Daytona Cloud](https://www.daytona.io/)**  
-
-  **Managed version of the open-source Daytona platform** . Features **single-command environment creation**, **prebuilt configurations**, and **enterprise security** .
-
-
-
-- **[Codeanywhere](https://codeanywhere.com/)**  
-
-  **Cloud IDE with prebuilt environments** for multiple languages . Features **collaboration**, **SSH access**, and **DevOps tooling** .
-
-
-
-- **[StackBlitz Enterprise](https://stackblitz.com/)**  
-
-  **Browser-based IDE for web development with instant preview** . **Runs Node.js in-browser via WebContainers** —no server required . **The fastest path to running full-stack JavaScript** in a browser.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Gitpod](https://github.com/gitpod-io/gitpod)**  
-
-  **Open-source developer platform for automated workspaces** (AGPL-3.0) . **The most widely adopted open-source cloud development environment** —**13,000+ GitHub stars** . **Ephemeral dev environments** defined in `.gitpod.yml` —each workspace runs in a container with prebuilt dependencies . **Features**: **prebuilds** (dependencies installed before you open the workspace), **browser-based VS Code**, **port forwarding**, **collaboration mode**, and **self-hosted deployment** via Kubernetes . **The reference implementation for automated cloud workspaces** .
-
-
-
-- **[Coder](https://github.com/coder/coder)**  
-
-  **Provision remote development environments via Terraform** (AGPL-3.0) . **10,000+ GitHub stars** . **The most infrastructure-flexible CDE platform** —**workspaces are defined as Terraform resources**, enabling provisioning on any cloud, Kubernetes cluster, or bare metal . **Features**: **Terraform-based workspace definitions**, **enterprise SSO**, **RBAC**, **audit logging**, **workspace templates**, and **support for any IDE** (VS Code, JetBrains, terminal) . **The best choice for organizations with existing Terraform infrastructure** who want full control over where workspaces run .
-
-
-
-- **[Daytona](https://github.com/daytonaio/daytona)**  
-
-  **The Open Source Dev Environment Manager** (Apache-2.0) . **The fastest path from zero to code** —**single command transforms any VM into a secure, shareable, standardized development environment** . **Features**: **prebuilds**, **Dev Container support**, **multi-IDE support** (VS Code, JetBrains, terminal), **Git provider integration** (GitHub, GitLab, Bitbucket), **resource limits**, and **self-hosted or cloud deployment** . **Daytona 2025 rewrite** moved to a server-first architecture with Python SDK . **The best choice for teams that want a simple, fast, self-hosted CDE** without Kubernetes complexity .
-
-
-
-- **[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)**  
-
-  **Run VS Code on a remote server accessible via browser** (MIT) . **The foundation for most browser-based VS Code experiences** —Gitpod maintains it as the upstream VS Code with minimal modifications . **The reference implementation for browser-based VS Code** .
-
-
-
-- **[code-server](https://github.com/coder/code-server)**  
-
-  **Run VS Code on a remote server, accessible through the browser** (MIT) . **60,000+ GitHub stars** . **The most widely deployed open-source browser IDE** —supports any machine with a consistent dev environment . **The best choice for simple browser-based VS Code access** .
-
-
-
-- **[Eclipse Theia](https://github.com/eclipse-theia/theia)**  
-
-  **Open-source cloud & desktop IDE** (EPL-2.0) . **Full VS Code extension compatibility**, **vendor-neutral**, and **customizable** . **Used by Google Cloud Shell, Arduino IDE 2.x, and others** . **The best choice for building custom cloud IDEs** —Theia is a framework, not just an application .
-
-
-
-- **[DevPod](https://github.com/loft-sh/devpod)**  
-
-  **Codespaces but open-source, client-only and unopinionated** (MPL-2.0) . **5,853+ GitHub stars** . **Works with any IDE and lets you use any cloud, Kubernetes, or localhost Docker** . **Features**: **Dev Container support**, **provider system** (AWS, GCP, Azure, Kubernetes, Docker, SSH), **client-only architecture** (no server to manage), and **IDE integration** (VS Code, JetBrains, terminal) . **The most flexible open-source CDE** —no vendor lock-in, works with your existing infrastructure .
-
-
-
-- **[Devbox](https://github.com/jetify-com/devbox)**  
-
-  **Instant, easy, and predictable development environments** (Apache-2.0) . **Nix-powered shell environments** —define your dev environment in JSON, get reproducible shells . **The most reproducible open-source dev environment tool** —no containers required .
-
-
-
-- **[Nix](https://github.com/NixOS/nix)**  
-
-  **The purely functional package manager** (LGPL-2.1) . **The foundation for reproducible development environments** —used by Devbox, Flox, and others . **The most rigorous approach to environment reproducibility** .
-
-
-
-- **[Flox](https://github.com/flox/flox)**  
-
-  **Developer environments you can take with you** (GPL-2.0) . **Nix-powered environments with a friendly CLI** —makes Nix accessible to teams without Nix expertise .
-
-
-
-- **[Dev Containers Specification](https://github.com/devcontainers/spec)**  
-
-  **The development container specification** (MIT) . **The open standard for defining development environments** —used by VS Code, GitHub Codespaces, DevPod, Daytona, and others . **The foundation for portable development environments** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Nixpacks](https://github.com/railwayapp/nixpacks)** — App source + Nix packages + Docker = OCI image (MIT) . **The fastest path to containerized dev environments** .
-
-- **[Devcontainer CLI](https://github.com/devcontainers/cli)** — Command-line interface for working with Dev Containers (MIT) . **The standard CLI for Dev Container workflows** .
-
-- **[Devcontainer Templates](https://github.com/devcontainers/templates)** — Templates for Dev Containers (MIT) . **Pre-built configurations for common stacks** .
-
-- **[devcontainer-features](https://github.com/devcontainers/features)** — Dev Container Features (MIT) . **Composable add-ons for Dev Containers** .
-
-- **[Tilt](https://github.com/tilt-dev/tilt)** — Microservice development environment (Apache-2.0) . **Live-updating dev environments for Kubernetes** .
-
-- **[Garden](https://github.com/garden-io/garden)** — DevOps automation for Kubernetes and serverless (MPL-2.0) . **Ephemeral preview environments** .
-
-- **[Skaffold](https://github.com/GoogleContainerTools/skaffold)** — Continuous development for Kubernetes (Apache-2.0) . **The standard for local-to-cluster dev loops** .
-
-- Community **n8n** workflows for CDE provisioning and workspace lifecycle automation.
-
-
-
-**Frameworks for building custom systems**: Combine **Gitpod** for automated workspace orchestration with **Coder** for Terraform-defined infrastructure, **code-server** or **OpenVSCode Server** for browser-based IDE access, **DevPod** for client-only flexibility, and **Dev Containers Specification** for portable environment definitions—creating a fully self-hosted, enterprise-grade cloud development environment platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Cloud development environments handling source code and credentials must follow security best practices and comply with data protection regulations.
-
-- **Open-source CDEs are mature and production-ready.** Gitpod provides automated workspaces with prebuilds . Coder enables Terraform-defined infrastructure . code-server (60K+ stars) is the most widely deployed browser IDE . **These are genuine alternatives to GitHub Codespaces.**
-
-- **The Dev Container specification is the interoperability layer.** Used by VS Code, GitHub Codespaces, DevPod, Daytona, and others —**Dev Containers are the closest thing to a portable dev environment standard** . Choose tools that support the specification to avoid lock-in.
-
-- **Infrastructure control is the key differentiator.** Coder for Terraform-defined workspaces on any infrastructure . DevPod for client-only, no-server architecture . Gitpod for Kubernetes-native orchestration . **Choose based on where you want workspaces to run.**
-
-- **Startup time matters more than feature lists.** Prebuilds, dependency caching, and snapshot restore are the difference between a 30-second and a 30-minute environment setup . **This directly impacts developer productivity and satisfaction.**
-
-- Self-hosted open-source solutions require proper Kubernetes/infrastructure management, security hardening, and ongoing maintenance. **Development environments are access points to your code**—compromise here undermines everything.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Cloud Development Environments Banner" width="100%" />
+</p>
+
+# ☁️ Awesome Cloud Development Environments (CDEs)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=green" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+A curated directory and ecosystem guide covering **Cloud Development Environments (CDEs)**, **remote developer workspaces**, **ephemeral environments**, **Dev Container specifications**, and **self-hosted browser-based IDE infrastructure**.
+
+Eliminate "works on my machine" issues by provisioning scalable, standardized, pre-configured development setups in seconds.
 
 ---
 
+## 📑 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [💼 SaaS & Managed Hosted Platforms](#-saas--managed-hosted-platforms)
+- [🔓 Open-Source GitHub Projects & Frameworks](#-open-source-github-projects--frameworks)
+- [📊 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚖️ Disclaimer](#-disclaimer)
 
-**Made for platform engineers, DevOps teams, and organizations building transparent cloud development environment solutions.**  
+---
 
-Let's make Cloud Development Environments more open, data-driven, and reproducible.
+## 🌐 Sector Overview & Market Dynamics
+
+The global Cloud Development Environment (CDE) and Cloud IDE market is estimated at **$6.8 billion to $9+ billion** (growing at an aggressive **~17% CAGR** into the mid-2030s), propelled by distributed engineering teams, platform engineering standardization, and autonomous AI coding agents requiring sandboxed execution. The market remains **moderately fragmented**: while hyperscalers and platform giants (Microsoft/GitHub, Amazon, Google) dominate enterprise developer ecosystems, high-velocity specialists (Gitpod/Ona, Coder, Daytona, Replit, StackBlitz) capture significant specialized adoption through open standards (Dev Containers), local-to-cloud flexibility, and AI execution sandboxes.
+
+---
+
+## 💼 SaaS & Managed Hosted Platforms
+
+The following SaaS platforms offer fully hosted or hybrid-managed Cloud Development Environments. Entries are sorted descending by company size (market valuation or parent revenue).
+
+| Platform | Company Valuation / Scale | Pricing Model | Free Tier & Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AWS Cloud9](https://aws.amazon.com/cloud9/)** | **~$2.2 Trillion** *(Amazon Market Cap)* | **$0 IDE software charge**; pays underlying EC2/EBS infrastructure (starts at ~$0.0104/hr for `t3.micro` EC2) | **12 Months Free Tier**: 750 hrs/month of eligible Linux `t2.micro`/`t3.micro` instances + 30 GB EBS monthly storage | Cloud-based IDE featuring built-in terminal, code debugger, and direct AWS service integration. |
+| **[Google Cloud Workstations](https://cloud.google.com/workstations)** | **~$2.1 Trillion** *(Alphabet Market Cap)* | Starts at **$0.05/vCPU/hr** management fee + Compute Engine VM rates (~$0.134/hr for `e2-standard-4`) + $0.20/cluster/hr | **90-Day Free Trial ($300 credits)** across Google Cloud; no permanent free tier (workstations draw against trial credits) | Enterprise-grade managed development environments with VPC-SC integration and private cluster security. |
+| **[GitHub Codespaces](https://github.com/features/codespaces)** | **~$90 Billion+** *(Owned by Microsoft)* | Compute starts at **$0.18/hr** (2-core), $0.36/hr (4-core), $0.72/hr (8-core); Storage billed at **$0.07/GB/month** | **Free Forever**: 120 core hours/month (~60 clock hrs on 2-core) + 15 GB storage per month on personal accounts | Instant cloud development environments configured via Dev Containers directly in GitHub repositories. |
+| **[Replit Teams](https://replit.com/)** | **$9.0 Billion** *(Series D, Mar 2026)* | **Replit Core**: **$20/month** (or $18/mo billed annually) with $20 usage credits included; **Teams/Pro**: $100/month | **Free Starter Tier**: Basic AI access (limited daily credits), 0.5 vCPU, 512MB RAM, ~20 hrs/mo dev time, 1 published app | Zero-setup collaborative browser IDE with instant runtime execution, AI pair programming, and app hosting. |
+| **[StackBlitz Enterprise](https://stackblitz.com/)** | **$700 Million** *(Series B, Jan 2025)* | **Pro**: **$25/user/month** ($18/mo billed annually); **Teams**: **$60/member/month** ($55/mo billed annually); Enterprise custom | **Free Personal Tier**: Unlimited public projects, public GitHub repo editing, standard WebContainer browser runtime | Lightning-fast browser IDE powered by WebContainers executing full-stack Node.js environments client-side. |
+| **[Coder Cloud](https://coder.com/)** | **~$300 Million** *(Series C, Apr 2026)* | **Community Edition**: **$0** self-hosted; **Enterprise Edition**: Annual contract per-user licenses via quote | **Free Forever Community Edition**: Unlimited self-hosted workspaces, unlimited single-org users, Terraform-driven | Self-hosted & enterprise-managed CDE provisioning multi-cloud developer environments via Terraform. |
+| **[Daytona Cloud](https://www.daytona.io/)** | **$125 Million** *(Series A, Feb 2026)* | **Pay-as-you-go**: Usage-based pricing billed per second based on compute and memory allocations | **$200 Free Cloud Credits** upon signup (no credit card required) for sandboxes and agentic runtimes | Open-source foundation and managed cloud infrastructure optimized for AI agent code execution and instant CDEs. |
+| **[Gitpod](https://www.gitpod.io/)** | **Acquired by OpenAI (2026)** *(~$100M+ est.)* | **Pay-as-you-go** metered usage after credits; Organization core plans start from **$9/user/month** | **Free Tier**: 500 credits per month (~50 standard workspace hours) for the first created organization | Automated ephemeral cloud development environments launched from git repos with automated prebuilds. |
+| **[DevZero](https://www.devzero.io/)** | **~$35 Million** *($26M venture capital raised)* | **Pro**: **$5/CPU core/month** (or ~$7/core/month via AWS Marketplace); Custom enterprise tiers | **Free Forever Tier**: Full Kubernetes cluster resource & cost monitoring, cost attribution, and 30-day retention | Developer environments with instant environment cloning, snapshot restore, and Kubernetes cost management. |
+| **[Codeanywhere](https://codeanywhere.com/)** | **Historical Platform** *(Acquired / Wound down)* | Historical tiers started at **$12/month** (Basic) and **$15/month** (Standard) prior to platform sunset | **7-Day Free Trial** historically offered prior to service sunset on July 1, 2026 | Pioneer cloud IDE offering browser-based containers, SSH server terminal connectivity, and remote deployment. |
+
+---
+
+## 🔓 Open-Source GitHub Projects & Frameworks
+
+The following open-source tools and infrastructure stacks allow teams to build and host their own Cloud Development Environments. Repositories are ranked descending by GitHub star count, featuring live star badges linking to each repo's stargazers.
+
+| Project & Repo | Stars | License | Primary Focus |
+| :--- | :--- | :--- | :--- |
+| **[code-server](https://github.com/coder/code-server)** [![Stars](https://img.shields.io/github/stars/coder/code-server?style=social&color=white)](https://github.com/coder/code-server/stargazers) | ~79.6k | MIT | Run VS Code on any remote Linux machine and access it securely through any modern web browser. |
+| **[Daytona](https://github.com/daytonaio/daytona)** [![Stars](https://img.shields.io/github/stars/daytonaio/daytona?style=social&color=white)](https://github.com/daytonaio/daytona/stargazers) | ~71.5k | Apache-2.0 | Open-source development environment manager transforming any VM into a standardized developer workspace. |
+| **[Eclipse Theia](https://github.com/eclipse-theia/theia)** [![Stars](https://img.shields.io/github/stars/eclipse-theia/theia?style=social&color=white)](https://github.com/eclipse-theia/theia/stargazers) | ~21.7k | EPL-2.0 | Extensible cloud and desktop IDE framework with full VS Code extension protocol compatibility. |
+| **[Nix](https://github.com/NixOS/nix)** [![Stars](https://img.shields.io/github/stars/NixOS/nix?style=social&color=white)](https://github.com/NixOS/nix/stargazers) | ~17.9k | LGPL-2.1 | Purely functional package manager providing 100% reproducible and isolated system environments. |
+| **[Coder](https://github.com/coder/coder)** [![Stars](https://img.shields.io/github/stars/coder/coder?style=social&color=white)](https://github.com/coder/coder/stargazers) | ~17.0k | AGPL-3.0 | Self-hosted remote development platform provisioning CDEs across any cloud, bare metal, or k8s via Terraform. |
+| **[Skaffold](https://github.com/GoogleContainerTools/skaffold)** [![Stars](https://img.shields.io/github/stars/GoogleContainerTools/skaffold?style=social&color=white)](https://github.com/GoogleContainerTools/skaffold/stargazers) | ~15.9k | Apache-2.0 | Facilitates continuous development for Kubernetes applications with automated build, push, and deploy loops. |
+| **[DevPod](https://github.com/loft-sh/devpod)** [![Stars](https://img.shields.io/github/stars/loft-sh/devpod?style=social&color=white)](https://github.com/loft-sh/devpod/stargazers) | ~15.3k | MPL-2.0 | Client-only, unopinionated Codespaces alternative leveraging Dev Containers across AWS, GCP, Azure, k8s, or Docker. |
+| **[E2B](https://github.com/e2b-dev/E2B)** [![Stars](https://img.shields.io/github/stars/e2b-dev/E2B?style=social&color=white)](https://github.com/e2b-dev/E2B/stargazers) | ~14.4k | Apache-2.0 | Secure cloud sandboxes designed for AI coding agents and automated code execution environments. |
+| **[Gitpod](https://github.com/gitpod-io/gitpod)** [![Stars](https://img.shields.io/github/stars/gitpod-io/gitpod?style=social&color=white)](https://github.com/gitpod-io/gitpod/stargazers) | ~13.8k | AGPL-3.0 | Automated ephemeral workspace orchestration platform with prebuilds, container sandboxes, and k8s support. |
+| **[Devbox](https://github.com/jetify-com/devbox)** [![Stars](https://img.shields.io/github/stars/jetify-com/devbox?style=social&color=white)](https://github.com/jetify-com/devbox/stargazers) | ~12.4k | Apache-2.0 | Instant, portable, and predictable developer environments powered by Nix without container overhead. |
+| **[Tilt](https://github.com/tilt-dev/tilt)** [![Stars](https://img.shields.io/github/stars/tilt-dev/tilt?style=social&color=white)](https://github.com/tilt-dev/tilt/stargazers) | ~10.1k | Apache-2.0 | Microservice development tool providing live container updates and instant diagnostics for Kubernetes dev. |
+| **[OpenVSCode Server](https://github.com/gitpod-io/openvscode-server)** [![Stars](https://img.shields.io/github/stars/gitpod-io/openvscode-server?style=social&color=white)](https://github.com/gitpod-io/openvscode-server/stargazers) | ~6.2k | MIT | Run upstream Visual Studio Code directly in a remote browser window with minimal modifications. |
+| **[Dev Containers Spec](https://github.com/devcontainers/spec)** [![Stars](https://img.shields.io/github/stars/devcontainers/spec?style=social&color=white)](https://github.com/devcontainers/spec/stargazers) | ~5.8k | MIT | The open specification defining containerized development environments portable across modern CDEs. |
+| **[Flox](https://github.com/flox/flox)** [![Stars](https://img.shields.io/github/stars/flox/flox?style=social&color=white)](https://github.com/flox/flox/stargazers) | ~4.2k | GPL-2.0 | Virtual environment and package management tool built on Nix with a streamlined, team-friendly CLI. |
+| **[Garden](https://github.com/garden-io/garden)** [![Stars](https://img.shields.io/github/stars/garden-io/garden?style=social&color=white)](https://github.com/garden-io/garden/stargazers) | ~3.6k | MPL-2.0 | Production-like ephemeral testing and development environments for Kubernetes and microservices. |
+| **[Nixpacks](https://github.com/railwayapp/nixpacks)** [![Stars](https://img.shields.io/github/stars/railwayapp/nixpacks?style=social&color=white)](https://github.com/railwayapp/nixpacks/stargazers) | ~3.6k | MIT | Converts application source code into reproducible OCI container images using Nix packages. |
+| **[Devcontainer CLI](https://github.com/devcontainers/cli)** [![Stars](https://img.shields.io/github/stars/devcontainers/cli?style=social&color=white)](https://github.com/devcontainers/cli/stargazers) | ~3.0k | MIT | Official reference CLI implementation for parsing, building, and running Dev Container specifications. |
+| **[devcontainer-features](https://github.com/devcontainers/features)** [![Stars](https://img.shields.io/github/stars/devcontainers/features?style=social&color=white)](https://github.com/devcontainers/features/stargazers) | ~1.5k | MIT | Reusable and composable installation scripts and capabilities for devcontainer configurations. |
+| **[Devcontainer Templates](https://github.com/devcontainers/templates)** [![Stars](https://img.shields.io/github/stars/devcontainers/templates?style=social&color=white)](https://github.com/devcontainers/templates/stargazers) | ~1.4k | MIT | Starter configurations and templates for creating standardized devcontainers across programming ecosystems. |
+| **[Brev CLI](https://github.com/brevdev/brev-cli)** [![Stars](https://img.shields.io/github/stars/brevdev/brev-cli?style=social&color=white)](https://github.com/brevdev/brev-cli/stargazers) | ~276 | Apache-2.0 | Seamlessly connects local developer tools, IDEs, and shell sessions directly into remote cloud compute VMs. |
+
+---
+
+## 📊 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Cloud-Development-Environments&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Cloud-Development-Environments&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help keep this curated list up-to-date with emerging CDE standards and platforms:
+
+1. **Fork the repository** to your GitHub account.
+2. **Add or modify entries** in `README.md` adhering to the tabular layout and criteria.
+3. **Verify criteria**: Provide factual descriptions, official documentation URLs, starting pricing tiers, and exact star badges.
+4. **Submit a Pull Request** with a clear explanation of your additions or changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated CDE list valuable for your team or personal workflow, please consider:
+- ⭐ **Starring this repository** to help others discover it
+- 🍴 **Forking and sharing** with colleagues and developer communities
+- ☕ **Supporting ongoing curation**: [Buy a coffee via GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)
+
+Thank you to all community contributors, builders, and maintainers driving the future of cloud-native development! 🙌
+
+---
+
+## ⚖️ Disclaimer
+
+- This repository is a community-curated directory intended for research and educational purposes. Inclusion does not represent an endorsement.
+- Ensure any cloud development environment adhering to corporate source code access adheres to internal data governance, SOC 2 compliance, and security policies.
+
+---
+
+<p align="center">
+  <b>Built for platform engineers, DevOps teams, and cloud development practitioners.</b><br>
+  <sub>Let's make Cloud Development Environments more open, data-driven, and reproducible.</sub>
+</p>
