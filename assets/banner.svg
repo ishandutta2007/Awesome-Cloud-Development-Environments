@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#7f00ff" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+    </linearGradient>
+
+    <filter id="glow-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+      }
+      .tag-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+
+      /* Animated Elements */
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(-12px) translateX(6px); }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0px) translateX(0px); }
+        50% { transform: translateY(10px) translateX(-8px); }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -40; }
+      }
+
+      .glow-orb-1 {
+        transform-origin: 200px 100px;
+        animation: pulseGlow 8s ease-in-out infinite;
+      }
+      .glow-orb-2 {
+        transform-origin: 1000px 250px;
+        animation: pulseGlow 10s ease-in-out infinite reverse;
+      }
+      .cloud-card-1 {
+        animation: floatSlow1 6s ease-in-out infinite;
+      }
+      .cloud-card-2 {
+        animation: floatSlow2 7s ease-in-out infinite;
+      }
+      .flow-line {
+        stroke-dasharray: 8 8;
+        animation: dashMove 2.5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid overlay -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Dynamic Glowing Orbs in the Background (Behind text) -->
+  <g filter="url(#glow-blur)">
+    <circle class="glow-orb-1" cx="200" cy="100" r="140" fill="#00f2fe" opacity="0.3" />
+    <circle class="glow-orb-2" cx="1020" cy="240" r="150" fill="#7f00ff" opacity="0.25" />
+    <circle cx="600" cy="30" r="100" fill="#38bdf8" opacity="0.15" />
+  </g>
+
+  <!-- Subtle dynamic connection lines in background -->
+  <path class="flow-line" d="M 80 180 Q 400 320 700 180 T 1150 140" fill="none" stroke="#00f2fe" stroke-opacity="0.2" stroke-width="2" />
+  <path class="flow-line" d="M 120 280 Q 500 80 850 260 T 1180 200" fill="none" stroke="#a855f7" stroke-opacity="0.2" stroke-width="2" />
+
+  <!-- Animated Floating Metric / CDE Badges (Floating on sides, avoiding center title) -->
+  <g class="cloud-card-1">
+    <rect x="940" y="55" width="200" height="70" rx="12" fill="url(#card-grad)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="965" cy="90" r="12" fill="#38bdf8" fill-opacity="0.2" />
+    <path d="M 960 90 L 964 94 L 971 86" stroke="#38bdf8" stroke-width="2" fill="none" stroke-linecap="round" />
+    <text x="988" y="83" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Dev Containers</text>
+    <text x="988" y="103" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Standardized OCI</text>
+  </g>
+
+  <g class="cloud-card-2">
+    <rect x="940" y="215" width="200" height="70" rx="12" fill="url(#card-grad)" stroke="#a855f7" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="965" cy="250" r="12" fill="#a855f7" fill-opacity="0.2" />
+    <circle cx="965" cy="250" r="5" fill="#c084fc" />
+    <text x="988" y="243" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Ephemeral CDEs</text>
+    <text x="988" y="263" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">Zero Local Drift</text>
+  </g>
+
+  <!-- Top Category Pill / Tag -->
+  <g transform="translate(60, 48)">
+    <rect width="270" height="30" rx="15" fill="#0369a1" fill-opacity="0.25" stroke="#0ea5e9" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="16" cy="15" r="4" fill="#38bdf8" />
+    <text x="28" y="20" class="tag-text">CURATED ECOSYSTEM GUIDE</text>
+  </g>
+
+  <!-- FOREGROUND: Main Title and Subtitle (Crisp and permanently visible) -->
+  <g transform="translate(60, 135)">
+    <text x="0" y="0" class="title-text">Awesome Cloud Development</text>
+    <text x="0" y="52" class="title-text">
+      <tspan fill="url(#primary-glow)">Environments (CDEs)</tspan>
+    </text>
+    <text x="0" y="102" class="subtitle-text">
+      The definitive index of ephemeral workspaces, cloud IDEs, and dev container infrastructure.
+    </text>
+  </g>
+
+  <!-- Bottom Accent Highlights Bar -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#primary-glow)" />
+</svg>
