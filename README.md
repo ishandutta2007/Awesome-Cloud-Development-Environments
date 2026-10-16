@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Development-Environments/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Cloud-Development-Environments?style=flat-square&color=green" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -58,9 +58,9 @@ The following SaaS platforms offer fully hosted or hybrid-managed Cloud Developm
 
 ## 🔓 Open-Source GitHub Projects & Frameworks
 
-The following open-source tools and infrastructure stacks allow teams to build and host their own Cloud Development Environments. Repositories are ranked descending by GitHub star count, featuring live star badges linking to each repo's stargazers.
+The following open-source tools and infrastructure stacks allow teams to build and host their own Cloud Development Environments. Repositories are ranked descending by GitHub Stars_Count, featuring live Stars_Badges linking to each repo's stargazers.
 
-| Project & Repo | Stars | License | Primary Focus |
+| Project & Repo | GitHub_Stars | License | Primary Focus |
 | :--- | :--- | :--- | :--- |
 | **[code-server](https://github.com/coder/code-server)** [![Stars](https://img.shields.io/github/stars/coder/code-server?style=social&color=white)](https://github.com/coder/code-server/stargazers) | ~79.6k | MIT | Run VS Code on any remote Linux machine and access it securely through any modern web browser. |
 | **[Daytona](https://github.com/daytonaio/daytona)** [![Stars](https://img.shields.io/github/stars/daytonaio/daytona?style=social&color=white)](https://github.com/daytonaio/daytona/stargazers) | ~71.5k | Apache-2.0 | Open-source development environment manager transforming any VM into a standardized developer workspace. |
@@ -97,7 +97,7 @@ Contributions are warmly welcomed! Help keep this curated list up-to-date with e
 
 1. **Fork the repository** to your GitHub account.
 2. **Add or modify entries** in `README.md` adhering to the tabular layout and criteria.
-3. **Verify criteria**: Provide factual descriptions, official documentation URLs, starting pricing tiers, and exact star badges.
+3. **Verify criteria**: Provide factual descriptions, official documentation URLs, starting pricing tiers, and exact Stars_Badges.
 4. **Submit a Pull Request** with a clear explanation of your additions or changes.
 
 ---
